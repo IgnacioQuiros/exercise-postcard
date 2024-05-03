@@ -1,0 +1,77 @@
+/*Cambios genéricos a todo el body y párrafos */
+body {
+	background: black;
+	font-family: "Barlow Condensed";
+}
+p {
+	font-size: 16px;
+}
+
+/*Cambios genéricos a todo el interior de la postcard */
+.postcard {
+	background: rgb(235, 228, 211);
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+
+/*Asignacion del layout para cada una de las tres partes de la postcard */
+.postcard-header {
+	display: flex;
+	font-family: "Briem Hand";
+}
+.postcard-body {
+	display: flex;
+}
+.postcard-footer {
+	margin-top: 8px;
+	text-align: center;
+}
+
+/*Modificacion mas concreta del estilo en el interior de "postcard-header" */
+.postcard-header img {
+	padding-top: 4px;
+	padding-left: 140px;
+	width: 50px;
+	height: 50px;
+}
+.postcard-header h1 {
+	padding-left: 9px;
+	margin: 0px;
+	text-decoration: underline 2px black;
+}
+
+/*Modificacion mas concreta del estilo en el interior de "postcard-body" */
+.body-left p:first-child {
+	margin-top: 0px;
+}
+.body-left,
+.body-right {
+	margin: 5px;
+	padding: 6px;
+}
+.body-right input {
+	border: none;
+	border-bottom: 1px solid grey;
+}
+
+/*Estilos con las distintas interacciones del botón de abajo*/
+button {
+	background-color: grey;
+	padding: 3px;
+	border: none;
+	border-bottom: 1px solid rgb(47, 47, 47);
+	border-right: 1px solid rgb(47, 47, 47);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover {
+	background-color: rgb(172, 172, 172);
+}
+button:active {
+	background-color: grey;
+	padding: 3px;
+	border: none;
+	border-top: 1px solid rgb(47, 47, 47);
+	border-left: 1px solid rgb(47, 47, 47);
+	transform: translateY(1px);
+}
